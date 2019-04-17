@@ -1,0 +1,99 @@
+\documentclass[12pt,spanish]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{graphicx} % figuras
+% \usepackage{subfigure} % subfiguras
+\usepackage{float} % para usar [H]
+\usepackage{amsmath}
+%\usepackage{txfonts}
+\usepackage{stackrel} 
+\usepackage{multirow}
+\usepackage[T1]{fontenc} %negrita
+\usepackage{enumerate} % enumerados
+\renewcommand{\labelitemi}{$-$}
+\renewcommand{\labelitemii}{$\cdot$}
+
+% \author{}
+% \title{Caratula}
+
+\begin{document}
+\title{Caratula}
+
+
+\begin{titlepage}
+
+\begin{figure}[htb]
+\begin{center}
+\includegraphics[width=10cm]{./Imagenes/logo}
+\end{center}
+\end{figure}
+
+\begin{center}
+\vspace*{-0.5in}
+\LARGE{\textbf{\bf UNERSIDAD PRIVADA DE TACNA}}\\
+
+\vspace*{0.25in}
+\large{\textbf{\bf FACULTAD DE INGENIERIA}}\\
+
+\vspace*{0.15in}
+\large{\textbf{\bf Escuela Profesional de Ingenieria de Sistemas}}\\
+
+
+\vspace*{0.5in}
+\Large{\textbf{\bf INFORME Nro 01}}\\
+\Large{\textbf{\bf "SISTEMAS DE CONTROL DE VERSIONES ONLINE"}}\\
+
+\vspace*{0.6in}
+\begin{Large}
+Curso: Base de Datos II \\
+\end{Large}
+
+\vspace*{0.3in}
+\begin{Large}
+Docente: Ing. Patrick Cuadros Quiroga \\
+\end{Large}
+
+\vspace*{0.5in}
+\begin{large}
+\textbf{\bf Wilfredo Vilca Chambilla (2006028540)}\\
+\end{large}
+
+\vspace*{1.5in}
+\begin{large}
+\textbf{\bf Tacna - Peru}\\
+\textbf{\bf 2019}\\
+\end{large}
+
+\end{center}
+
+\end{titlepage}
+
+
+\section{Introduccion} 
+Los sistemas de control de versiones son programas que tienen como objetivo controlar los cambios en el desarrollo de cualquier tipo de software, permitiendo conocer el estado actual de un proyecto, los cambios que se le han realizado a cualquiera de sus piezas, las personas que intervinieron en ellos, etc.
+
+Este artículo sirve como introducción a este tipo de herramientas de manera global, pero también para conocer uno de los sistemas de control de versiones existentes en la actualidad que se ha popularizado tremendamente, gracias al sitio Github. Se trata de Git, el sistema de control de versiones más conocido y usado actualmente, que es el motor de Github. Al terminar su lectura entenderás qué es Git y qué es Github, dos cosas distintas que a veces resultan confusas de entender por las personas que están dando sus primeros pasos en el mundo del desarrollo.
+
+\section{Necesidad de un control de versiones} 
+El control de versiones es una de las tareas fundamentales para la administración de un proyecto de desarrollo de software en general. Surge de la necesidad de mantener y llevar control del código que vamos programando, conservando sus distintos estados. Es absolutamente necesario para el trabajo en equipo, pero resulta útil incluso a desarrolladores independientes.
+
+Aunque trabajemos solos, sabemos más o menos cómo surge la necesidad de gestionar los cambio entre distintas versiones de un mismo código. Prueba de ello es que todos los programadores, más tarde o más temprano, se han visto en la necesidad de tener dos o más copias de un mismo archivo, para no perder su estado anterior cuando vamos a introducir diversos cambios. Para ir solucionando nuestro día a día habremos copiado un fichero, agregándole la fecha o un sufijo como "antiguo". Aunque quizás esta acción nos sirva para salir del paso, no es lo más cómodo ni mucho menos lo más práctico.
+
+En cuanto a equipos de trabajo se refiere, todavía se hace más necesario disponer de un control de versiones. Seguro que la mayoría hemos experimentado las limitaciones y problemas en el flujo de trabajo cuando no se dispone de una herramienta como Git: machacar los cambios en archivos hechos por otros componentes del equipo, incapacidad de comparar de manera rápida dos códigos, para saber los cambios que se introdujeron al pasar de uno a otro, etc.
+
+Además, en todo proyecto surge la necesidad de trabajar en distintas ramas al mismo tiempo, introduciendo cambios a los programas, tanto en la rama de desarrollo como la que tenemos en producción. Teóricamente, las nuevas funcionalidades de tu aplicación las programarás dentro de la rama de desarrollo, pero constantemente tienes que estar resolviendo bugs, tanto en la rama de producción como en la de desarrollo.
+
+Para facilitarnos la vida existen sistemas como Git, Subversion, CVS, etc. que sirven para controlar las versiones de un software y que deberían ser una obligatoriedad en cualquier desarrollo. Nos ayudan en muchos ámbitos fundamentales, como podrían ser:
+
+Comparar el código de un archivo, de modo que podamos ver las diferencias entre versiones 
+Restaurar versiones antiguas 
+Fusionar cambios entre distintas versiones 
+Trabajar con distintas ramas de un proyecto, por ejemplo la de producción y desarrollo
+
+En definitiva, con estos sistemas podemos crear y mantener repositorios de software que conservan todos los estados por el que va pasando la aplicación a lo largo del desarrollo del proyecto. Almacenan también las personas que enviaron los cambios, las ramas de desarrollo que fueron actualizadas o fusionadas, etc. Todo este mundo de utilidades para llevar el control del software resulta complejo en un principio, pero veremos que, a pesar de la complejidad, con Git podremos manejar los procesos de una manera bastante simple.
+
+
+
+\end{document}
